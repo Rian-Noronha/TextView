@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="SpeakableTextPresentCheck">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/txtAutoLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="phone|email|web"
+            android:text="Rian Noronha \nEmail: rian.noronha@upe.br \nFone:(87)981059875 \nURL:https://github.com/Rian-Noronha"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtBigText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="Texto bem grande para não caber apenas em uma linha ou duas"
+            android:textSize="28sp"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtMonospaced"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fonte monospace"
+            android:textSize="20sp"
+            android:typeface="monospace"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtFonte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/frijole_regular"
+            android:text="Fonte customizada"
+            android:textSize="20sp"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtStrike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Texto Strike"
+            android:textSize="20sp"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtHtml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtSpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:bufferType="spannable"
+            >
+        </TextView>
+
+    </LinearLayout>
+
+
+</ScrollView>
